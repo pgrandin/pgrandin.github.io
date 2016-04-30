@@ -1,16 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Pierre's blog]]></title>
   <link href="http://pgrandin.github.io/atom.xml" rel="self"/>
   <link href="http://pgrandin.github.io/"/>
-  <updated>2016-04-29T09:58:50-07:00</updated>
+  <updated>2016-04-29T17:59:04-07:00</updated>
   <id>http://pgrandin.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Pierre Grandin]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Cherokee Carputer]]></title>
+    <link href="http://pgrandin.github.io/blog/2016/04/29/the-cherokee-carputer/"/>
+    <updated>2016-04-29T18:31:11-07:00</updated>
+    <id>http://pgrandin.github.io/blog/2016/04/29/the-cherokee-carputer</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://pgrandin.github.io/images/built-at-amt-badges-round.png" width="180"></p>
+
+<h3>Pimping my 2000 Jeep Grand Cherokee.</h3>
+
+<p>I have a 2000 Jeep Grand Cherokee. I love it. It runs great, is really comfy. The only thing I really didn&rsquo;t like was that it came with a <em>tape player</em>. Yep. I don&rsquo;t even own tapes anymore. And I wanted an embedded navigation system. So this was a good opportunity to build something to pimp it up.</p>
+
+<h3>Navit, the opensource vector-base navigation software</h3>
+
+<p>Fortunately, I have been involved since about 10 years in the Navit project, the first opensource, vector based navigation software. So, I <em>had</em> to put something more modern in my Jeep :)</p>
+
+<h3>The screen</h3>
+
+<p>Today it is quite easy to find a 2 DIN frame to put a 7" touchscreen in your car. Unfortunately, my Jeep has a 1.5 DIN frame.. So I had to custom-build a frame for it.</p>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_1116.JPG" width="320" title="'Custom fitting the screen'" > One of the goal of this build is that it should look as factory as possible, and I wanted to be able to remove everything without leaving a trace, in case I would sell the car for example. So instead of modifying the parts from my car, I ordered a new autoradio frame from eBay, a new screen bezel for my touchscreen, and I modified those part. The first step was to mash them together. This gave me a custom sized bezel. I used a dremel to cut them and some automotive bondo to glue them together.</p>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_1461.JPG" width="320" title="'Testing the setup'" > I was quite satisfied with the result. The screen was easy to read, even under direct sunlight exposure. The software was working as expected. I took it for a ride to test it, and ensure that there was no side effects such as annoying vibration noises. All good! I had to sacrifice the A/C vents right below the screen, because otherwise my touchscreen would not fit. Fortunately the air can still flow, I only had to remove the parts that allows you to control the airflow direction.</p>
+
+<p><img class="right" src="http://pgrandin.github.io/images/carputer/IMG_1465.JPG" width="240" title="'Finishing the screen bezel'" >
+<img class="left" src="http://pgrandin.github.io/images/carputer/IMG_1589.JPG" width="240" title="'How it looks like'" > After polisthing the screen bezel with more bondo, sanding and painting, the result was looking quite good. I pondered keeping the screen controls, but eventually decided that it&rsquo;s sometime useful to be able to turn it off.</p>
+
+<h3>The carputer</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_2699.JPG" width="240" title="'Now you dont'" >
+Having a good looking screen is useless without a proper computer to drive it. My first prototype included a Raspberry Pi directly behind the screen. Unfortunately, it wasn&rsquo;t really powerful enough (it was the first Rasperry Pi model B) and it was struggling to handle the GPS navigation with some spotify playback at the same time.
+So instead I decided to use an Intel Nuc platform. It&rsquo;s really tiny (about 17x17cm) but quite powerful.</p>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_2698.JPG" width="240" title="'You see me'" >
+My car came also with a CD charger in the trunk. I removed it, and crafter a very simple support plate to hook the Nuc in the trunk in place of the CD charger. When the box is closed, nothing shows that this has been modified. This box includes the NUC itself, a DC/DC stepper (the NUC needs 19V) and an &lsquo;intelligent&rsquo; power supply that will turn on and shutdown the computer when I start or stop the engine.</p>
+
+<h3>Behind the scene</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_1779.JPG" width="240" title="'Some packed electronics'" >
+Operating a carputer requires a few more devices, so behind the screen, where the tape player used to live, I have a small enclosure with a few boards: a USB hub to avoid running multiple cables to the trunk, a relay switch to shutdown and start the car audio amplifier, and a USB soundcard (since I am using the original connectors). This enclosure just sits in place of the original tape player.</p>
+
+<h3>Never satisfied</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/carputer/IMG_1789.JPG" width="240" title="'Working on a new prototype'" >
+Everybody probably has at least one project that he feels it&rsquo;s never truly finished. There&rsquo;s always something to improve. For me, it&rsquo;s probably this project. I have been using it in my car for around two years now, but there is a few things that I want to change. I have been toying with a new design, using a 3D printed bezel for example, that should help achieve an even better looking result.</p>
+
+<p>Also, I can access all the required features using the touchscreen, and I can control the audio playback using the steering wheel controls (more about this in an upcoming post), but I sometimes feel that my current setup misses a few physical buttons, so I have been thinking about that. I&rsquo;ll probably post an update in another blog once this is done!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Pig Hawk]]></title>
+    <link href="http://pgrandin.github.io/blog/2016/04/28/the-pig-hawk/"/>
+    <updated>2016-04-28T21:46:24-07:00</updated>
+    <id>http://pgrandin.github.io/blog/2016/04/28/the-pig-hawk</id>
+    <content type="html"><![CDATA[<p><img src="http://pgrandin.github.io/images/pighawk/squadron.png" width="320">
+<img class="right" src="http://pgrandin.github.io/images/built-at-amt-badges-round.png"></p>
+
+<p>Quadcopters are really fun, and I wanted to build one for a long time. My main intent was to take pictures and shoot videos from a new angle. Also, this has to be fun to fly!</p>
+
+<h3>Team work</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/pighawk/IMG_2313.JPG" width="240" title="'Team work'" > I was working on this project with a few friends, all of us were absolute beginners when it comes to quadcopters. Since the construction can be split into subtasks it was easy to keep everyone busy, between soldering cables, tweaking the 3D printing settings, or configuring the flight controller. Team work is fun, especially when you spend several hours focused on the same project. Everybody learned something along the way.</p>
+
+<h3>Leveraging 3D printing</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/pighawk/IMG_2124.JPG" width="240" title="'Leveraging 3D printing'" > Because we wanted to learn about how quadcopters work, we choose to built our own instead of buying one ready to fly. It&rsquo;s easy to find some sample designs on Thingiverse, for example. We choose to start with <a href="http://www.thingiverse.com/thing:234867">the crossfire 2</a> and customize it a bit to better fit our parts, usage, and to cope with our really poor pilots skills (because crashing means re-printing parts.. And we crash A LOT! :)).</p>
+
+<h3>Working on the assembly</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/pighawk/IMG_2126.JPG" width="240" title="'Working on the assembly'" > <a href="http://www.thingiverse.com/thing:234867">The crossfire 2</a> comes with a very detailed instruction guide. For most parts you just need to follow the guides, and some parts are specific to the components you choose. We picked the PixHawk flight controller for example (of which the project&rsquo;s codename is a pun). Overall it was rather easy to get everything assembled. Here you can see the quadcopter with half of the body assembled, the four arms, and the ESCs (Electronic Speed Controllers).</p>
+
+<h3>Sample shot</h3>
+
+<p>After several weeks of hard work, long hours reading documentation and tweaking the settings, it was time for the inaugural flight. Of course, we crashed it a few times in the process of learning how to fly the thing correctly. But the feeling we got when we were able to make it do almost what we wanted was worth the effort. We hooked up a GoPro on it, and went flying at Cesar Chavez park for a sunset. The view was gorgeous.
+<img src="http://pgrandin.github.io/images/pighawk/IMG_2300.PNG" width="800" title="'The Pig's view'" ></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Cat Castle]]></title>
+    <link href="http://pgrandin.github.io/blog/2016/04/27/the-cat-castle/"/>
+    <updated>2016-04-27T22:06:42-07:00</updated>
+    <id>http://pgrandin.github.io/blog/2016/04/27/the-cat-castle</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://pgrandin.github.io/images/built-at-amt-badges-round.png">
+I have two cats, and cats love to climb stuffs, and hide in boxes. So I wanted to build
+them some kind of furniture. It had to look good (because of the <a href="https://en.wikipedia.org/wiki/Wife_acceptance_factor">WAF</a>), and it was a good opportunity for me
+to learn about basic woodworking and using AMT&rsquo;s CNC router. I learned about the basic usage of the CNC router during a class hosted at AMT and building my own project was a good opportunity to put that knowledge in practice. Learning things like the fact that a plywood sheet is not flat and you have to account for that in your margin error can be a bit challenging at first.</p>
+
+<h3>Woodworking</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_1773.JPG" width="240" title="'Working on my corners'" > Ensuring that the corners are all aligned. Not too bad for my first time. I didn&rsquo;t really know how to ensure that the edges of each corners would be aligned, and I have to thanks Chris (aka Sullimech) for sharing his knowledge on the topic. This is one of the things that I really like about <a href="http://www.acemonstertoys.org/">Ace Monster Toys</a> : everytime I was about to get stuck on a project, someone was around and stepped in to help or teach me something. Learning is great.</p>
+
+<h3>The assembly</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_1814.JPG" width="240" title="'Assembling the boxes'" > Assembling the boxes. The furniture itself is an assembly of boxes in staggered rows. The bottom part and each vertical panel are tied together using wood pins and glue. On each panel, there is a hole shapped like a cat head, and a paw print, carved using <a href="http://wiki.acemonstertoys.org/Large_CNC_Router">AMT&rsquo;s large CNC router</a>. The cat head allows the cats to hide in a box and play with someone outside. At first I was planning to paint the inside of the paw print, but eventually I liked the raw wood effect.</p>
+
+<h3>The pole</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_1817.JPG"" width="240" title="'Working on the pole'" > The pole has two purposes : Provide some kind of balance, ensuring that the top platform does not bend, and provide a big scratchpost that the cats can climb. It&rsquo;s simply a strong cardboard pipe, that I got for free from Home Depot (it&rsquo;s the pipe that the carpets they sell are wrapped around). I glued some hessian on it, and wrapped several layers of it for durability. It allows the cats to do some exercise, and it&rsquo;s also really good for them to wear off their claws since they are indoor cats.</p>
+
+<h3>Quality control</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_1879.JPG"" width="240" title="'Nala inspecting the quality of the carpet that will be used'" > Nala inspecting the quality of the carpet that will be used for the floor of each level. Because cats love to sleep in semi-closed spaces, each block can serve as a cosy place for a good nap. So to make it comfy (and better looking) each level has some carpet on the floor. The carpet is held in place using double-sided adhesive, that makes it easy to remove them if they need to be cleaned or replaced.</p>
+
+<h3>Final inspection</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_2278.JPG"" width="240" title="'Inspecting the place'" > The customers are inspecting the place. New smells, new hideouts. This looks fun!</p>
+
+<p>There is a hole in each platform that allows the cats to quickly jump from a platform to the lower or upper one. Usually they go up via the pole, up to the top platform or the one right below it, and down via the holes. Really funny to watch.</p>
+
+<h3>The result</h3>
+
+<p><img class="left" src="http://pgrandin.github.io/images/cattree/IMG_4023.JPG"" width="240" title="'Finished!'" > Finished! I built this project last year, and not a day goes by without my cats hanging out on it, taking a nap, or fighting for the best spot (the top platform). It&rsquo;s usually funny to watch, as they will race each other across the room, and climb the pole in less than two seconds.</p>
+
+<p>Overall this was a really interesting build. I&rsquo;m really satisfied with the result. It looks great, is functional, and my cats love it!</p>
+]]></content>
+  </entry>
   
 </feed>

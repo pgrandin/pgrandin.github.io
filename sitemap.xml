@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://pgrandin.github.io/blog/2016/04/29/the-cherokee-carputer/</loc>
+<lastmod>2016-04-29T18:31:11-07:00</lastmod>
+</url>
+<url>
+<loc>http://pgrandin.github.io/blog/2016/04/28/the-pig-hawk/</loc>
+<lastmod>2016-04-28T21:46:24-07:00</lastmod>
+</url>
+<url>
+<loc>http://pgrandin.github.io/blog/2016/04/27/the-cat-castle/</loc>
+<lastmod>2016-04-27T22:06:42-07:00</lastmod>
+</url>
+<url>
 <loc>http://pgrandin.github.io/blog/archives/</loc>
 </url>
 <url>
